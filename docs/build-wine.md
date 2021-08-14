@@ -70,7 +70,7 @@ make
 ```
 Wine build complete.
 ```
-## Collecting some files
+## Collecting files
 - Install Wine inside the container:
 ```
 make install
