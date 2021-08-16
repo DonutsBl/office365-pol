@@ -13,4 +13,4 @@ At his point in time, this script is not recommended for beginner users since it
 - Open up PlayOnLinux, choose Tools | Run a local script, select the script you downloaded and get past the warnings regarding the script not being authorized by the PlayOnLinux team. After that, the script should start and you can follow its instructions.
 
 ## License
-Unless otherwise specified, everything in this repository is licensed under the [Zero-Clause BSD license](https://opensource.org/licenses/0BSD). This does necessarily apply to every dependency that's needed to use this software, but isn't contained in its repository.
+Unless otherwise specified, everything in this repository is licensed under the [Zero-Clause BSD license](https://opensource.org/licenses/0BSD). This does not necessarily apply to dependencies which are needed to use this software, but not contained in its repository.
