@@ -94,7 +94,7 @@ exit
 ```
 - Make sure PlayOnLinux has been started at least once, then copy the "cx-20.0.4" folder to the PlayOnLinux "wine" folder:
 ```
-cp -R build/cx-20.0.4 ~/.PlayOnLinux/wine/
+cp -R build/cx-20.0.4 ~/.PlayOnLinux/wine/linux-x86
 ```
 And with that, you're build of Wine is ready to be used in PlayOnLinux.
 - Once you've verified hte build works, you can delete the "build" directory:
