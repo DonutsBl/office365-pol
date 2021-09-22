@@ -19,4 +19,5 @@ rm -f Windows/Fonts/*.fon Windows/Fonts/*.ini Windows/Fonts/*.dat Windows/Fonts/
 sudo cp -r Windows/Fonts /usr/share/fonts/msfonts
 fc-cache -f -v
 ```
-You can now delete the ISO as well as the "Windows/Fonts" folder if you want.
+- You can now delete the ISO as well as the "Windows/Fonts" folder if you want.
+- I am not providing the folder due to copyright issue.
