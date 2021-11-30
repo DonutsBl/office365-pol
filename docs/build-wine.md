@@ -45,8 +45,8 @@ sudo docker run -it -v $(realpath ./build):/mnt/build --name winebuild your-id-h
 - You'll get a shell running inside the container. This container has a volume set up up, which causes everything you write to its /mnt/build directory to end up in a "build" subdirectory of your "winebuild" directory. With this in mind, we're going to store everything important to /mnt/build while working with the container. So, change to /mnt/build and then download and extract the source code we'll be compiling:
 ```
 cd /mnt/build
-wget https://media.codeweavers.com/pub/crossover/source/crossover-sources-20.0.4.tar.gz
-tar -xzf crossover-sources-20.0.4.tar.gz sources/wine
+wget https://media.codeweavers.com/pub/crossover/source/crossover-sources-21.0.0.tar.gz
+tar -xzf crossover-sources-21.0.0.tar.gz sources/wine
 ```
 ## Compiling
 - Change into the extracted directory:
@@ -77,24 +77,24 @@ make install
 ```
 - Create a folder in /mnt/build that all the compiled Wine files will be copied into:
 ```
-mkdir /mnt/build/cx-20.0.4
+mkdir /mnt/build/cx-21.0.0
 ```
 - Copy the files:
 ```
-cp -R /usr/local/bin /mnt/build/sources/wine/include /mnt/build/cx-20.0.4
-mkdir /mnt/build/cx-20.0.4/lib
-cp -R /usr/local/lib/wine /usr/local/lib/libwine* /mnt/build/cx-20.0.4/lib
-mkdir /mnt/build/cx-20.0.4/share
-cp -R /usr/local/share/man /usr/local/share/wine /mnt/build/cx-20.0.4/share
+cp -R /usr/local/bin /mnt/build/sources/wine/include /mnt/build/cx-21.0.0
+mkdir /mnt/build/cx-21.0.0/lib
+cp -R /usr/local/lib/wine /usr/local/lib/libwine* /mnt/build/cx-21.0.0/lib
+mkdir /mnt/build/cx-21.0.0/share
+cp -R /usr/local/share/man /usr/local/share/wine /mnt/build/cx-21.0.0/share
 ```
 ## Finishing up
 - Exit out of the container:
 ```
 exit
 ```
-- Make sure PlayOnLinux has been started at least once, then copy the "cx-20.0.4" folder to the PlayOnLinux "wine" folder:
+- Make sure PlayOnLinux has been started at least once, then copy the "cx-21.0.0" folder to the PlayOnLinux "wine" folder:
 ```
-cp -R build/cx-20.0.4 ~/.PlayOnLinux/wine/linux-x86
+cp -R build/cx-21.0.0 ~/.PlayOnLinux/wine/linux-x86
 ```
 And with that, you're build of Wine is ready to be used in PlayOnLinux.
 - Once you've verified the build works, you can delete the "build" directory:
@@ -105,8 +105,10 @@ sudo rm -rf build
 ```
 sudo docker ps --all
 ```
-Search for the "winebuild" container in the list and take note of the container ID, which will allow you to delete the container:
+- Search for the "winebuild" container in the list and take note of the container ID, which will allow you to delete the container:
+```
 sudo docker rm -v your-container-id-here
+```
 - If you're sure you will never need to do this again, you can also delete the container image as well the entire "winebuild" directory:
 ```
 sudo docker rmi your-image-id-here
