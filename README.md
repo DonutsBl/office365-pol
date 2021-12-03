@@ -13,4 +13,4 @@ At his point in time, this script is not recommended for beginner users since it
 - Open up PlayOnLinux, choose Tools | Run a local script, select the script you downloaded and get past the warnings regarding the script not being authorized by the PlayOnLinux team. After that, the script should start and you can follow its instructions.
 
 ## License
-Unless otherwise specified, everything in this repository is licensed under the [Zero-Clause BSD license](https://raw.githubusercontent.com/DonutsBl/office365-pol/main/LICENSE). This does not necessarily apply to dependencies which are needed to use this software, but not contained in its repository.
+Unless otherwise specified, everything in this repository is licensed under the [Zero-Clause BSD license](https://github.com/DonutsBl/office365-pol/blob/main/LICENSE). This does not necessarily apply to dependencies which are needed to use this software, but not contained in its repository.
