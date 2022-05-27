@@ -15,7 +15,7 @@
 [ "$PLAYONLINUX" = "" ] && exit 0
 source "$PLAYONLINUX/lib/sources"
 
-TITLE="Microsoft 365 Apps / Office 365"
+TITLE="Microsoft Office 365"
 SHORTNAME="Office365"
 WINEVERSION="cx-21.2.0"
 SYSARCH="x86"
@@ -23,7 +23,7 @@ SYSARCH="x86"
 # Initial greetings
 POL_SetupWindow_Init
 POL_Debug_Init
-POL_SetupWindow_presentation "$TITLE" "Microsoft" "https://www.office.com" "DonutsB" "$SHORTNAME"
+POL_SetupWindow_presentation "$TITLE" "Microsoft" "https://www.office.com" "DonutsB & ETCHDEV" "$SHORTNAME"
 wbinfo -V || WINBINDMISSING="yes"
 if [ "$WINBINDMISSING" = "yes" ]
 then
