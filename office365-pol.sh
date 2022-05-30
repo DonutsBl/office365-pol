@@ -17,7 +17,7 @@ source "$PLAYONLINUX/lib/sources"
 
 TITLE="Microsoft 365 Apps / Office 365"
 SHORTNAME="Office365"
-WINEVERSION="cx-20.0.4"
+WINEVERSION="cx-21.2.0"
 SYSARCH="x86"
 
 # Initial greetings
@@ -31,7 +31,7 @@ then
     POL_SetupWindow_Close
     exit
 fi
-POL_SetupWindow_message "$(eval_gettext "This script requires Codeweavers' Wine variant in version 20.0.4, for which you can only get the source code, but no binaries. So, you'll have to compile it yourself. Instructions for this are available at $BLUBBERDUBBER, but it generally isn't recommended for beginners. This script also assumes that you have all fonts that normally ship with Windows 7 or higher installed.")" "$(eval_gettext "Warning")"
+POL_SetupWindow_message "$(eval_gettext "This script requires Codeweavers' Wine variant in version 21.2.0, for which you can only get the source code, but no binaries. So, you'll have to compile it yourself. Instructions for this are available at https://github.com/DonutsBl/office365-pol/blob/main/docs/build-wine.md, but it generally isn't recommended for beginners. This script also assumes that you have all fonts that normally ship with Windows 7 or higher installed.")" "$(eval_gettext "Warning")"
 
 # Let the user select OfficeSetup.exe
 POL_SetupWindow_browse "$(eval_gettext "Please select the downloaded installer. You have to use the online (!) installer for the 32-bit (!) version of Microsoft 365 Apps / Office 365.")" "$TITLE"
