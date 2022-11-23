@@ -1,0 +1,12 @@
+[MS365]
+Description=MS365
+clientmachine=localhost
+ignoregeometry=true
+ignoregeometryrule=2
+maximizehoriz=true
+maximizevert=true
+minsize=800,600
+types=1
+wmclass=.*\\b(winword.exe|excel.exe|powerpnt.exe|outlook.exe|onenote.exe|msaccess.exe|mspub.exe)\\b.*
+wmclasscomplete=true
+wmclassmatch=3
