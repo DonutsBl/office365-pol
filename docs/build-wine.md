@@ -27,7 +27,7 @@ cd winebuild
 ```
 - Download the Dockerfile for the winebuild container:
 ```
-wget -O Dockerfile https://raw.githubusercontent.com/PhoenicisOrg/phoenicis-winebuild/cf86dd3c98ba0b8fdbd5f9fc02bc5a4c15587ee9/environments/linux-x86-wine
+wget -O Dockerfile https://raw.githubusercontent.com/PhoenicisOrg/phoenicis-winebuild/master/environments/linux-x86-wine
 ```
 ## Setting up the compiling environment
 - Build the Docker container image:
